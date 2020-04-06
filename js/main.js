@@ -2,6 +2,7 @@ $(document).ready(function() {
    $('.rooms__slider').slick({
         dots: true,
         fade: true,
+        autoplay: 3000,
         prevArrow: $('.slick-prev'),
         nextArrow: $('.slick-next')
     });
@@ -12,14 +13,6 @@ $(document).ready(function() {
         variableWidth: true,
         prevArrow: $('.slick-prev-new'),
         nextArrow: $('.slick-next-new')
-    });
-
-    $('.burger-btn').on('click', function(){
-        $('.menu').addClass('active');
-    });
-
-    $('.close-btn').on('click', function(){
-        $('.menu').removeClass('active');
-    });
+    }); 
 });
 
